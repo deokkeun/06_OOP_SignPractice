@@ -117,8 +117,8 @@ public class MemberService {
 		String memberPw = sc.next();
 		
 		if(memberPw.equals(loginMember.getMemberPw())) {
-			return "ID :" + loginMember.getMemberId() + ", " + "Password : ****** , " + 
-					"Name : " + loginMember.getMemberName() + ", " + "Age : " + loginMember.getMemberAge();
+			return "ID :" + loginMember.getMemberId() + "\n" + "Password : ****** \n" + 
+					"Name : " + loginMember.getMemberName() + "\n" + "Age : " + loginMember.getMemberAge();
 		} else {
 			return "비밀번호가 틀렸습니다.";
 		}
@@ -185,7 +185,7 @@ public class MemberService {
 			loginMember.setMemberPw(memberPw);
 			return "비밀번호 변경이 완료되었습니다.";
 		} else {
-			return "비밀번호가 일치하지 않습니다. 다시 입력해주세요!";
+			return "비밀번호가 일치하지 않습니다. 다시 시도해주세요!";
 		}
 	}
 	
